@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <!-- Connecting CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+
+        <h2>My Portfolio</h2>
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#skills">Skills</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#recommendations">Recommendations</a>
+
+        </div>
+
+        <!-- JavaScript will control this button -->
+        <button id="themeButton">🌙</button>
+
+    </nav>
+
+
+    <!-- HOME SECTION -->
+
+    <section id="home" class="home">
+
+        <h1>Hello, I'm <span>Roshan</span> 👋</h1>
+
+        <h2>Computer Science Engineering Student</h2>
+
+        <p>
+            Welcome to my personal portfolio.
+            I am interested in programming, web development
+            and technology.
+        </p>
+
+        <a href="#projects" class="button">
+            View My Projects
+        </a>
+
+    </section>
+
+
+    <!-- PERSONAL INFORMATION -->
+
+    <section id="about">
+
+        <h2 class="section-title">
+            Personal Information
+        </h2>
+
+        <div class="about-box">
+
+            <div>
+
+                <h3>About Me</h3>
+
+                <p>
+                    I am a Computer Science Engineering student
+                    who enjoys programming and learning new
+                    technologies.
+                </p>
+
+                <p>
+                    I like creating projects and improving my
+                    programming and problem-solving skills.
+                </p>
+
+            </div>
+
+
+            <div class="personal-info">
+
+                <p>
+                    <strong>Name:</strong> Roshan
+                </p>
+
+                <p>
+                    <strong>Course:</strong>
+                    B.Tech Computer Science Engineering
+                </p>
+
+                <p>
+                    <strong>Interests:</strong>
+                    Programming, Web Development and Technology
+                </p>
+
+                <p>
+                    <strong>Career Goal:</strong>
+                    Software Developer
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+
+    <section id="skills">
+
+        <h2 class="section-title">
+            My Skills
+        </h2>
+
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+
+                <h3>💻 C Programming</h3>
+
+                <p>
+                    Knowledge of programming fundamentals,
+                    loops, functions and problem solving.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>🐍 Python</h3>
+
+                <p>
+                    Basic Python programming and
+                    problem solving.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>🌐 HTML</h3>
+
+                <p>
+                    Creating the structure and content
+                    of websites.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>🎨 CSS</h3>
+
+                <p>
+                    Designing and styling websites
+                    using CSS.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>⚡ JavaScript</h3>
+
+                <p>
+                    Adding interaction and functionality
+                    to websites.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+
+    <section id="projects">
+
+        <h2 class="section-title">
+            My Projects
+        </h2>
+
+
+        <div class="projects-container">
+
+
+            <div class="project-card">
+
+                <h3>🎯 Number Guessing Game</h3>
+
+                <p>
+                    A simple game where the user tries
+                    to guess a randomly generated number.
+                </p>
+
+                <span>C Programming</span>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>✊ Rock Paper Scissors</h3>
+
+                <p>
+                    An interactive Rock Paper Scissors
+                    game created using web technologies.
+                </p>
+
+                <span>HTML + CSS + JavaScript</span>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>📊 Student Grade Calculator</h3>
+
+                <p>
+                    A Python program that calculates
+                    student grades and performance.
+                </p>
+
+                <span>Python</span>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>🖥️ Digital Desk</h3>
+
+                <p>
+                    A personal dashboard containing
+                    useful tools and information.
+                </p>
+
+                <span>HTML + CSS + JavaScript</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RECOMMENDATIONS SECTION -->
+
+    <section id="recommendations">
+
+        <h2 class="section-title">
+            Recommendations
+        </h2>
+
+
+        <!-- Existing Recommendations -->
+
+        <div id="recommendationList">
+
+            <div class="recommendation">
+
+                <p>
+                    "Roshan is enthusiastic about programming
+                    and always interested in learning new
+                    technologies."
+                </p>
+
+                <h4>— Faculty</h4>
+
+            </div>
+
+
+            <div class="recommendation">
+
+                <p>
+                    "A curious learner who enjoys experimenting
+                    with programming and technology."
+                </p>
+
+                <h4>— Friend</h4>
+
+            </div>
+
+        </div>
+
+
+        <!-- Recommendation Form -->
+
+        <div class="recommendation-form">
+
+            <h3>Add Your Recommendation</h3>
+
+
+            <input
+                type="text"
+                id="nameInput"
+                placeholder="Your Name"
+            >
+
+
+            <textarea
+                id="recommendationInput"
+                placeholder="Write your recommendation..."
+            ></textarea>
+
+
+            <button onclick="addRecommendation()">
+                Submit Recommendation
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Roshan | My Portfolio
+        </p>
+
+        <p>
+            Built using HTML, CSS and JavaScript
+        </p>
+
+    </footer>
+
+
+    <!-- Connecting JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
